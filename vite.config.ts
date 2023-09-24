@@ -4,6 +4,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/prefer-ts-expect-error
 // @ts-ignore
 import iconsJson from './icons.json'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
+import keyCert from 'key-cert'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,6 +24,10 @@ export default defineConfig({
         name: 'QR Code Offline Transfer',
         icons: iconsJson.icons
       }
-    })
-  ]
+    }),
+    nodePolyfills()
+  ],
+  server: {
+    https: await keyCert()
+  }
 })
