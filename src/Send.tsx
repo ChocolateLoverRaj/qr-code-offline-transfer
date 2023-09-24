@@ -11,7 +11,7 @@ const Send: FC = () => {
   return (
     <>
       <label>
-        Choose a file to share <br />
+        Choose a file to share. Note: Only text base files will work probably.<br />
         <input
           type='file'
           onChange={({ target }) => { setInput(target) }}

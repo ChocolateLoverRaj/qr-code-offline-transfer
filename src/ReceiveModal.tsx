@@ -58,11 +58,6 @@ const ReceiveModal: FC = () => {
                 const page = metaData[0]
                 const totalPages = metaData[1]
                 const data = arrayBuffer.slice(8)
-                const td = new TextDecoder()
-                let string = ''; const decoder = new TextDecoder()
-                string += decoder.decode(data)
-                string += decoder.decode() // end-of-queue
-                alert(string)
                 if (page === 0) {
                   return {
                     page,
