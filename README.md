@@ -1,3 +1,8 @@
+> [!WARNING]  
+> I no longer use or maintain this project. I don't really code in JavaScript anymore (I switched to Rust). If you want to maintain or fork it let me know (you can email me) and I can put the link here.
+>
+> The idea behind this project was to transfer data between two smartphones which did not have internet access, with just web apps. It works great for small amounts of data. Idk if I even uploaded a working version though.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
